@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="file:/media/SUB/MinesweeperFX/dist/" href="MinesweeperFX_browser.jnlp">
+    <information>
+        <title>MinesweeperFX</title>
+        <vendor>SHiNKiROU</vendor>
+        <homepage href=""/>
+        <description>MinesweeperFX</description>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.5+"/>
+        <extension name="JavaFX Runtime" href="http://dl.javafx.com/1.3/javafx-rt.jnlp"/>
+        <jar href="MinesweeperFX.jar" main="true"/>
+        <jar href="lib/Minesweeper.jar"/>
+    </resources>
+    <applet-desc name="MinesweeperFX" main-class="com.sun.javafx.runtime.adapter.Applet" width="600" height="600">
+        <param name="MainJavaFXScript" value="org.shinkirou.minesweeper.gui.Main"/>
+    </applet-desc>
+    <update check="always"/>
+</jnlp>

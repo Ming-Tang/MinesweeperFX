@@ -1,0 +1,44 @@
+.scene {
+    /* The default font for all content, it in inherited by all nodes */
+    -fx-font: 12pt "Amble Cn";
+
+    /* Main color palette that the user should play with to change colors of controls */
+    -fx-accent: #0093ff;
+    -fx-base: #d0d0d0;
+    -fx-background: #f4f4f4;
+    -fx-control-inner-background: white;
+    -fx-focus-color: #0093ff;
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: #292929;
+    -fx-light-text-color: white;
+}
+
+.toolbar {
+	-fx-background: #8af;
+	-fx-height: 20;
+}
+
+.normal, .ground, .marked, .mine {
+	-fx-stroke: #fff;
+	-fx-stroke-width: 1;
+}
+
+.normal {
+	-fx-fill: linear(0%, 0%) to (0%, 100%) stops (0%, #acf) (50%, #5ac);
+}
+
+.normal:hover {
+	-fx-fill: linear(0%, 0%) to (0%, 100%) stops (0%, #bdf) (50%, #6bd);
+}
+
+.marked {
+	-fx-fill: linear(0%, 0%) to (0%, 100%) stops (0%, #fca) (50%, #ca5);
+}
+
+.mine {
+	-fx-fill: linear(0%, 0%) to (0%, 100%) stops (0%, #f88) (50%, #f11);
+}
+
+.ground {
+	-fx-fill: #7ab;
+}
